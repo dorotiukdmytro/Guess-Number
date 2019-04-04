@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4a148c;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  padding: 50px;
+  background-color: #ede7f6;
+  
+}
+
+h1 span {
+  font-size: 40px;
+}
+
+.game-box {
+  padding-top: 50px;
+  text-align: center;
+  font-family: verdana, sans-serif;
+  color: #ede7f6;
+}
+
+.game-box h2 {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 28px;
+}
+
+.btn-random, .user-input, .btn-check {
+  outline: none;
+}
+
+.btn-random, .btn-check {
+  display: inline-block;
+  padding: 10px 40px;
+  border: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+  font-family: verdana, sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn-random:hover, .btn-check:hover {
+  background-color: #d1c4e9;
+}
+
+.btn-check {
+  margin-top: 20px;
+}
+
+.user-input {
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  transition: .2s;
+}
+
+.user-input:focus {
+  border-radius: 15px;
+}
+.game-box p {
+  padding-top: 20px;
+  font-size: 18px;
+}

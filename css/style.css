@@ -23,7 +23,7 @@ h1 span {
 }
 
 .game-box {
-  padding-top: 50px;
+  padding: 50px 0;
   text-align: center;
   font-family: verdana, sans-serif;
   color: #ede7f6;
@@ -76,6 +76,33 @@ h1 span {
   border-radius: 15px;
 }
 .game-box p {
-  padding-top: 20px;
+  padding: 20px 0;
   font-size: 18px;
+}
+
+@media(max-width: 768px) {
+
+  h1 {
+    padding: 20px;
+    font-size: 24px;
+  }
+  
+  h1 span {
+    font-size: 30px;
+  }
+
+  .game-box {
+    padding: 20px 0;
+  }
+
+  .game-box h2 {
+    padding: 30px 10px;
+    font-size: 20px;
+  }
+
+  .game-box p {
+    padding: 30px 10px;
+    font-size: 18px;
+  }
+
 }

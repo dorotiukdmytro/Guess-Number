@@ -47,12 +47,13 @@ function startGame() {
           let gameBox = document.querySelector('.game-box');
           gameBox.appendChild(textElem);
           gameIsStarted = !gameIsStarted;
+          
+          newGameBtn.classList.add('visible');
+          newGameBtn.addEventListener('click', newGame);
         }
-        newGameBtn.classList.add('visible');
       }
     }
     document.querySelector('.btn-check').addEventListener('click', checkNumber);
-    newGameBtn.addEventListener('click', newGame);
   }
 }
 document.querySelector('.btn-random').addEventListener('click', startGame);

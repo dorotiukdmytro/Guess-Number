@@ -1,23 +1,26 @@
-const randomBtn = document.querySelector('.btn-random');
-let gameIsStarted = false;
-const numberInput = document.querySelector('.user-input');
-numberInput.style.opacity = '0';
-
 function startGame() {
 
+  let gameIsStarted = false;
   let textElem = document.createElement('p');
   textElem.textContent = '';
-  let roundShow = document.createElement('p');
-  roundShow.textContent = ''; 
-
-  numberInput.style.opacity = '1'; 
-  randomBtn.style.opacity = '0'; 
+  const numberInput = document.querySelector('.user-input');
+  numberInput.classList.add('visible');
+  const randomBtn = document.querySelector('.btn-random');
+  randomBtn.classList.add('unvisible');
+  const newGameBtn = document.querySelector('.btn-new-game');
 
   if(!gameIsStarted) {
 
     let number = Math.floor(Math.random() * 1000);
+    console.log(number);
     let roundCount = 0;
     gameIsStarted = !gameIsStarted;
+
+    function newGame() {
+      newGameBtn.classList.remove('visible');
+      console.log('test');
+      startGame();
+    }
 
     function checkNumber(e) {
       e.preventDefault();
@@ -44,11 +47,12 @@ function startGame() {
           let gameBox = document.querySelector('.game-box');
           gameBox.appendChild(textElem);
           gameIsStarted = !gameIsStarted;
-          
         }
+        newGameBtn.classList.add('visible');
       }
     }
     document.querySelector('.btn-check').addEventListener('click', checkNumber);
-  } 
+    newGameBtn.addEventListener('click', newGame);
+  }
 }
-randomBtn.addEventListener('click', startGame);
+document.querySelector('.btn-random').addEventListener('click', startGame);

@@ -15,7 +15,6 @@ h1 {
   font-family: 'Titillium Web', sans-serif;
   padding: 50px;
   background-color: #ede7f6;
-  
 }
 
 h1 span {
@@ -35,12 +34,14 @@ h1 span {
   font-size: 28px;
 }
 
-.btn-random, .user-input, .btn-check {
+.btn-random, .btn-restart, .user-input, .btn-check {
   outline: none;
 }
 
-.btn-random, .btn-check {
-  display: inline-block;
+.btn-random, .btn-check, .btn-new-game {
+  -webkit-appearance: none;
+  display: block;
+  margin: 20px auto 0;
   padding: 10px 40px;
   border: 0;
   text-transform: uppercase;
@@ -55,16 +56,18 @@ h1 span {
   transition: .2s;
 }
 
-.btn-random:hover, .btn-check:hover {
+.btn-new-game {
+  display: none;
+}
+
+.btn-random:hover, .btn-check:hover, .btn-new-game:hover {
   background-color: #d1c4e9;
 }
 
-.btn-check {
-  margin-top: 20px;
-}
-
 .user-input {
+  display: none;
   padding: 10px;
+  margin: 0 auto;
   font-size: 18px;
   text-align: center;
   border: 0;
@@ -78,6 +81,14 @@ h1 span {
 .game-box p {
   padding: 20px 0;
   font-size: 18px;
+}
+
+.visible {
+  display: block;
+}
+
+.unvisible {
+  display: none;
 }
 
 @media(max-width: 768px) {

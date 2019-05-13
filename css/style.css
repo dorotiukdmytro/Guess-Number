@@ -34,11 +34,16 @@ h1 span {
   font-size: 28px;
 }
 
-.btn-random, .btn-restart, .user-input, .btn-check {
+.btn-random,
+.btn-restart,
+.user-input,
+.btn-check {
   outline: none;
 }
 
-.btn-random, .btn-check, .btn-new-game {
+.btn-random,
+.btn-check,
+.btn-new-game {
   -webkit-appearance: none;
   display: block;
   margin: 20px auto 0;
@@ -60,7 +65,9 @@ h1 span {
   display: none;
 }
 
-.btn-random:hover, .btn-check:hover, .btn-new-game:hover {
+.btn-random:hover,
+.btn-check:hover,
+.btn-new-game:hover {
   background-color: #d1c4e9;
 }
 
@@ -78,6 +85,7 @@ h1 span {
 .user-input:focus {
   border-radius: 15px;
 }
+
 .game-box p {
   padding: 20px 0;
   font-size: 18px;
@@ -97,7 +105,7 @@ h1 span {
     padding: 20px;
     font-size: 24px;
   }
-  
+
   h1 span {
     font-size: 30px;
   }
